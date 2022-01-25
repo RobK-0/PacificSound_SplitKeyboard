@@ -1,0 +1,1181 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5050 1250 0    50   Input ~ 0
+Col1
+Text GLabel 5750 1250 0    50   Input ~ 0
+Col2
+Text GLabel 6450 1250 0    50   Input ~ 0
+Col3
+Text GLabel 7150 1250 0    50   Input ~ 0
+Col4
+Text GLabel 7850 1250 0    50   Input ~ 0
+Col5
+Text GLabel 8550 1250 0    50   Input ~ 0
+Col6
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6113B75B
+P 5350 1800
+F 0 "SW1" H 5350 2085 50  0000 C CNN
+F 1 "SW_Push" H 5350 1994 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 5350 2000 50  0001 C CNN
+F 3 "~" H 5350 2000 50  0001 C CNN
+	1    5350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 6113B761
+P 5550 1950
+F 0 "D1" V 5596 1870 50  0000 R CNN
+F 1 "D" V 5505 1870 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 5550 1950 50  0001 C CNN
+F 3 "~" H 5550 1950 50  0001 C CNN
+	1    5550 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 6113C4D5
+P 5350 2500
+F 0 "SW7" H 5350 2785 50  0000 C CNN
+F 1 "SW_Push" H 5350 2694 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 5350 2700 50  0001 C CNN
+F 3 "~" H 5350 2700 50  0001 C CNN
+	1    5350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 6113C4DB
+P 5550 2650
+F 0 "D7" V 5596 2570 50  0000 R CNN
+F 1 "D" V 5505 2570 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 5550 2650 50  0001 C CNN
+F 3 "~" H 5550 2650 50  0001 C CNN
+	1    5550 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW13
+U 1 1 6113F8C7
+P 5350 3200
+F 0 "SW13" H 5350 3485 50  0000 C CNN
+F 1 "SW_Push" H 5350 3394 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 5350 3400 50  0001 C CNN
+F 3 "~" H 5350 3400 50  0001 C CNN
+	1    5350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D13
+U 1 1 6113F8CD
+P 5550 3350
+F 0 "D13" V 5596 3270 50  0000 R CNN
+F 1 "D" V 5505 3270 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 5550 3350 50  0001 C CNN
+F 3 "~" H 5550 3350 50  0001 C CNN
+	1    5550 3350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4950 2100 0    50   Input ~ 0
+Row1
+Text GLabel 4950 2800 0    50   Input ~ 0
+Row2
+Text GLabel 4950 3500 0    50   Input ~ 0
+Row3
+Text GLabel 4950 4200 0    50   Input ~ 0
+Row4
+$Comp
+L Switch:SW_Push SW2
+U 1 1 6114D6F9
+P 6050 1800
+F 0 "SW2" H 6050 2085 50  0000 C CNN
+F 1 "SW_Push" H 6050 1994 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 6050 2000 50  0001 C CNN
+F 3 "~" H 6050 2000 50  0001 C CNN
+	1    6050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 6114D6FF
+P 6250 1950
+F 0 "D2" V 6296 1870 50  0000 R CNN
+F 1 "D" V 6205 1870 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 6250 1950 50  0001 C CNN
+F 3 "~" H 6250 1950 50  0001 C CNN
+	1    6250 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 6114D705
+P 6050 2500
+F 0 "SW8" H 6050 2785 50  0000 C CNN
+F 1 "SW_Push" H 6050 2694 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 6050 2700 50  0001 C CNN
+F 3 "~" H 6050 2700 50  0001 C CNN
+	1    6050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 6114D70B
+P 6250 2650
+F 0 "D8" V 6296 2570 50  0000 R CNN
+F 1 "D" V 6205 2570 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 6250 2650 50  0001 C CNN
+F 3 "~" H 6250 2650 50  0001 C CNN
+	1    6250 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 6114D711
+P 6050 3200
+F 0 "SW14" H 6050 3485 50  0000 C CNN
+F 1 "SW_Push" H 6050 3394 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 6050 3400 50  0001 C CNN
+F 3 "~" H 6050 3400 50  0001 C CNN
+	1    6050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D14
+U 1 1 6114D717
+P 6250 3350
+F 0 "D14" V 6296 3270 50  0000 R CNN
+F 1 "D" V 6205 3270 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 6250 3350 50  0001 C CNN
+F 3 "~" H 6250 3350 50  0001 C CNN
+	1    6250 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 61153781
+P 6750 1800
+F 0 "SW3" H 6750 2085 50  0000 C CNN
+F 1 "SW_Push" H 6750 1994 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 6750 2000 50  0001 C CNN
+F 3 "~" H 6750 2000 50  0001 C CNN
+	1    6750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 61153787
+P 6950 1950
+F 0 "D3" V 6996 1870 50  0000 R CNN
+F 1 "D" V 6905 1870 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 6950 1950 50  0001 C CNN
+F 3 "~" H 6950 1950 50  0001 C CNN
+	1    6950 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 6115378D
+P 6750 2500
+F 0 "SW9" H 6750 2785 50  0000 C CNN
+F 1 "SW_Push" H 6750 2694 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 6750 2700 50  0001 C CNN
+F 3 "~" H 6750 2700 50  0001 C CNN
+	1    6750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 61153793
+P 6950 2650
+F 0 "D9" V 6996 2570 50  0000 R CNN
+F 1 "D" V 6905 2570 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 6950 2650 50  0001 C CNN
+F 3 "~" H 6950 2650 50  0001 C CNN
+	1    6950 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW15
+U 1 1 61153799
+P 6750 3200
+F 0 "SW15" H 6750 3485 50  0000 C CNN
+F 1 "SW_Push" H 6750 3394 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 6750 3400 50  0001 C CNN
+F 3 "~" H 6750 3400 50  0001 C CNN
+	1    6750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D15
+U 1 1 6115379F
+P 6950 3350
+F 0 "D15" V 6996 3270 50  0000 R CNN
+F 1 "D" V 6905 3270 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 6950 3350 50  0001 C CNN
+F 3 "~" H 6950 3350 50  0001 C CNN
+	1    6950 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 611537A5
+P 6050 3900
+F 0 "SW20" H 6050 4185 50  0000 C CNN
+F 1 "SW_Push" H 6050 4094 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 6050 4100 50  0001 C CNN
+F 3 "~" H 6050 4100 50  0001 C CNN
+	1    6050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D21
+U 1 1 611537AB
+P 6950 4050
+F 0 "D21" V 6996 3970 50  0000 R CNN
+F 1 "D" V 6905 3970 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 6950 4050 50  0001 C CNN
+F 3 "~" H 6950 4050 50  0001 C CNN
+	1    6950 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 61155245
+P 7450 1800
+F 0 "SW4" H 7450 2085 50  0000 C CNN
+F 1 "SW_Push" H 7450 1994 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 7450 2000 50  0001 C CNN
+F 3 "~" H 7450 2000 50  0001 C CNN
+	1    7450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 6115524B
+P 7650 1950
+F 0 "D4" V 7696 1870 50  0000 R CNN
+F 1 "D" V 7605 1870 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 7650 1950 50  0001 C CNN
+F 3 "~" H 7650 1950 50  0001 C CNN
+	1    7650 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 61155251
+P 7450 2500
+F 0 "SW10" H 7450 2785 50  0000 C CNN
+F 1 "SW_Push" H 7450 2694 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 7450 2700 50  0001 C CNN
+F 3 "~" H 7450 2700 50  0001 C CNN
+	1    7450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D10
+U 1 1 61155257
+P 7650 2650
+F 0 "D10" V 7696 2570 50  0000 R CNN
+F 1 "D" V 7605 2570 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 7650 2650 50  0001 C CNN
+F 3 "~" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW16
+U 1 1 6115525D
+P 7450 3200
+F 0 "SW16" H 7450 3485 50  0000 C CNN
+F 1 "SW_Push" H 7450 3394 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 7450 3400 50  0001 C CNN
+F 3 "~" H 7450 3400 50  0001 C CNN
+	1    7450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D16
+U 1 1 61155263
+P 7650 3350
+F 0 "D16" V 7696 3270 50  0000 R CNN
+F 1 "D" V 7605 3270 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 7650 3350 50  0001 C CNN
+F 3 "~" H 7650 3350 50  0001 C CNN
+	1    7650 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW21
+U 1 1 61155269
+P 6750 3900
+F 0 "SW21" H 6750 4185 50  0000 C CNN
+F 1 "SW_Push" H 6750 4094 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 6750 4100 50  0001 C CNN
+F 3 "~" H 6750 4100 50  0001 C CNN
+	1    6750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 61156FDD
+P 8150 1800
+F 0 "SW5" H 8150 2085 50  0000 C CNN
+F 1 "SW_Push" H 8150 1994 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 8150 2000 50  0001 C CNN
+F 3 "~" H 8150 2000 50  0001 C CNN
+	1    8150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 61156FE3
+P 8350 1950
+F 0 "D5" V 8396 1870 50  0000 R CNN
+F 1 "D" V 8305 1870 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 8350 1950 50  0001 C CNN
+F 3 "~" H 8350 1950 50  0001 C CNN
+	1    8350 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW11
+U 1 1 61156FE9
+P 8150 2500
+F 0 "SW11" H 8150 2785 50  0000 C CNN
+F 1 "SW_Push" H 8150 2694 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 8150 2700 50  0001 C CNN
+F 3 "~" H 8150 2700 50  0001 C CNN
+	1    8150 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D11
+U 1 1 61156FEF
+P 8350 2650
+F 0 "D11" V 8396 2570 50  0000 R CNN
+F 1 "D" V 8305 2570 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 8350 2650 50  0001 C CNN
+F 3 "~" H 8350 2650 50  0001 C CNN
+	1    8350 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW17
+U 1 1 61156FF5
+P 8150 3200
+F 0 "SW17" H 8150 3485 50  0000 C CNN
+F 1 "SW_Push" H 8150 3394 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 8150 3400 50  0001 C CNN
+F 3 "~" H 8150 3400 50  0001 C CNN
+	1    8150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D17
+U 1 1 61156FFB
+P 8350 3350
+F 0 "D17" V 8396 3270 50  0000 R CNN
+F 1 "D" V 8305 3270 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 8350 3350 50  0001 C CNN
+F 3 "~" H 8350 3350 50  0001 C CNN
+	1    8350 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 6115BAD3
+P 8850 1800
+F 0 "SW6" H 8850 2085 50  0000 C CNN
+F 1 "SW_Push" H 8850 1994 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 8850 2000 50  0001 C CNN
+F 3 "~" H 8850 2000 50  0001 C CNN
+	1    8850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 6115BAD9
+P 9050 1950
+F 0 "D6" V 9096 1870 50  0000 R CNN
+F 1 "D" V 9005 1870 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 9050 1950 50  0001 C CNN
+F 3 "~" H 9050 1950 50  0001 C CNN
+	1    9050 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 6115BADF
+P 8850 2500
+F 0 "SW12" H 8850 2785 50  0000 C CNN
+F 1 "SW_Push" H 8850 2694 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_noLed" H 8850 2700 50  0001 C CNN
+F 3 "~" H 8850 2700 50  0001 C CNN
+	1    8850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D12
+U 1 1 6115BAE5
+P 9050 2650
+F 0 "D12" V 9096 2570 50  0000 R CNN
+F 1 "D" V 9005 2570 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 9050 2650 50  0001 C CNN
+F 3 "~" H 9050 2650 50  0001 C CNN
+	1    9050 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 1800 5150 2500
+Wire Wire Line
+	5150 2500 5150 3200
+Connection ~ 5150 2500
+Wire Wire Line
+	5850 1800 5850 2500
+Wire Wire Line
+	5850 2500 5850 3200
+Connection ~ 5850 2500
+Wire Wire Line
+	6550 1800 6550 2500
+Wire Wire Line
+	6550 2500 6550 3200
+Connection ~ 6550 2500
+Wire Wire Line
+	6550 3200 6550 3900
+Connection ~ 6550 3200
+Wire Wire Line
+	7250 1800 7250 2500
+Wire Wire Line
+	7250 2500 7250 3200
+Connection ~ 7250 2500
+Wire Wire Line
+	7950 1800 7950 2500
+Wire Wire Line
+	7950 2500 7950 3200
+Connection ~ 7950 2500
+Wire Wire Line
+	8650 1800 8650 2500
+Connection ~ 8650 2500
+Wire Wire Line
+	4950 2100 5550 2100
+Wire Wire Line
+	5550 2100 6250 2100
+Connection ~ 5550 2100
+Wire Wire Line
+	6250 2100 6950 2100
+Connection ~ 6250 2100
+Wire Wire Line
+	6950 2100 7650 2100
+Connection ~ 6950 2100
+Wire Wire Line
+	7650 2100 8350 2100
+Connection ~ 7650 2100
+Wire Wire Line
+	8350 2100 9050 2100
+Connection ~ 8350 2100
+Wire Wire Line
+	4950 2800 5550 2800
+Wire Wire Line
+	5550 2800 6250 2800
+Connection ~ 5550 2800
+Wire Wire Line
+	6250 2800 6950 2800
+Connection ~ 6250 2800
+Wire Wire Line
+	6950 2800 7650 2800
+Connection ~ 6950 2800
+Wire Wire Line
+	7650 2800 8350 2800
+Connection ~ 7650 2800
+Wire Wire Line
+	8350 2800 9050 2800
+Connection ~ 8350 2800
+Wire Wire Line
+	4950 3500 5550 3500
+Wire Wire Line
+	5550 3500 6250 3500
+Connection ~ 5550 3500
+Wire Wire Line
+	6250 3500 6950 3500
+Connection ~ 6250 3500
+Wire Wire Line
+	6950 3500 7650 3500
+Connection ~ 6950 3500
+Wire Wire Line
+	7650 3500 8350 3500
+Connection ~ 7650 3500
+Connection ~ 6950 4200
+$Comp
+L Device:Rotary_Encoder_Switch SW19
+U 1 1 61422BD3
+P 4250 3350
+F 0 "SW19" H 4250 3717 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 4250 3626 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_Rotary" H 4100 3510 50  0001 C CNN
+F 3 "~" H 4250 3610 50  0001 C CNN
+	1    4250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 61454A48
+P 3950 3350
+F 0 "#PWR0117" H 3950 3100 50  0001 C CNN
+F 1 "GND" V 3955 3222 50  0000 R CNN
+F 2 "" H 3950 3350 50  0001 C CNN
+F 3 "" H 3950 3350 50  0001 C CNN
+	1    3950 3350
+	0    1    1    0   
+$EndComp
+Text GLabel 3950 3250 0    50   Input ~ 0
+EncoA1
+Text GLabel 3950 3450 0    50   Input ~ 0
+EncoB1
+$Comp
+L Device:D D19
+U 1 1 610E3AD5
+P 4550 3700
+F 0 "D19" V 4596 3620 50  0000 R CNN
+F 1 "D" V 4505 3620 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 4550 3700 50  0001 C CNN
+F 3 "~" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 3450 4550 3550
+$Comp
+L Device:Rotary_Encoder_Switch SW22
+U 1 1 614A8A0B
+P 8050 3900
+F 0 "SW22" H 8050 4267 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 8050 4176 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_Rotary" H 7900 4060 50  0001 C CNN
+F 3 "~" H 8050 4160 50  0001 C CNN
+	1    8050 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 614A8A11
+P 8350 3900
+F 0 "#PWR0120" H 8350 3650 50  0001 C CNN
+F 1 "GND" V 8355 3772 50  0000 R CNN
+F 2 "" H 8350 3900 50  0001 C CNN
+F 3 "" H 8350 3900 50  0001 C CNN
+	1    8350 3900
+	0    -1   1    0   
+$EndComp
+Text GLabel 8350 3800 2    50   Input ~ 0
+EncoA2
+Text GLabel 8350 4000 2    50   Input ~ 0
+EncoB2
+$Comp
+L Device:D D22
+U 1 1 614A8A19
+P 7600 4050
+F 0 "D22" V 7646 3970 50  0000 R CNN
+F 1 "D" V 7555 3970 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 7600 4050 50  0001 C CNN
+F 3 "~" H 7600 4050 50  0001 C CNN
+	1    7600 4050
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW18
+U 1 1 614BBFA2
+P 9300 3150
+F 0 "SW18" H 9300 3517 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 9300 3426 50  0000 C CNN
+F 2 "PacificSound:MX_ALPS_PG1350_Rotary" H 9150 3310 50  0001 C CNN
+F 3 "~" H 9300 3410 50  0001 C CNN
+	1    9300 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 614BBFA8
+P 9600 3150
+F 0 "#PWR0121" H 9600 2900 50  0001 C CNN
+F 1 "GND" V 9605 3022 50  0000 R CNN
+F 2 "" H 9600 3150 50  0001 C CNN
+F 3 "" H 9600 3150 50  0001 C CNN
+	1    9600 3150
+	0    -1   1    0   
+$EndComp
+Text GLabel 9600 3050 2    50   Input ~ 0
+EncoA3
+Text GLabel 9600 3250 2    50   Input ~ 0
+EncoB3
+$Comp
+L Device:D D18
+U 1 1 614BBFB0
+P 8850 3350
+F 0 "D18" V 8896 3270 50  0000 R CNN
+F 1 "D" V 8805 3270 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 8850 3350 50  0001 C CNN
+F 3 "~" H 8850 3350 50  0001 C CNN
+	1    8850 3350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8650 2500 8650 3050
+Wire Wire Line
+	8350 3500 8850 3500
+Connection ~ 8350 3500
+Wire Wire Line
+	4950 4200 5200 4200
+Wire Wire Line
+	5200 4100 5200 4200
+Connection ~ 5200 4200
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61284A15
+P 10300 1000
+F 0 "H1" H 10400 1046 50  0000 L CNN
+F 1 "M2" H 10400 955 50  0000 L CNN
+F 2 "PacificSound:MountingHole_2.2mm_M2_Pad" H 10300 1000 50  0001 C CNN
+F 3 "~" H 10300 1000 50  0001 C CNN
+	1    10300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6128F450
+P 10750 1000
+F 0 "H2" H 10850 1046 50  0000 L CNN
+F 1 "M2" H 10850 955 50  0000 L CNN
+F 2 "PacificSound:MountingHole_2.2mm_M2_Pad" H 10750 1000 50  0001 C CNN
+F 3 "~" H 10750 1000 50  0001 C CNN
+	1    10750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 612901B8
+P 10300 1350
+F 0 "H3" H 10400 1396 50  0000 L CNN
+F 1 "M2" H 10400 1305 50  0000 L CNN
+F 2 "PacificSound:MountingHole_2.2mm_M2_Pad" H 10300 1350 50  0001 C CNN
+F 3 "~" H 10300 1350 50  0001 C CNN
+	1    10300 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 6129115E
+P 10750 1350
+F 0 "H4" H 10850 1396 50  0000 L CNN
+F 1 "M2" H 10850 1305 50  0000 L CNN
+F 2 "PacificSound:MountingHole_2.2mm_M2_Pad" H 10750 1350 50  0001 C CNN
+F 3 "~" H 10750 1350 50  0001 C CNN
+	1    10750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 61292448
+P 10300 1700
+F 0 "H5" H 10400 1746 50  0000 L CNN
+F 1 "M2" H 10400 1655 50  0000 L CNN
+F 2 "PacificSound:MountingHole_2.2mm_M2_Pad" H 10300 1700 50  0001 C CNN
+F 3 "~" H 10300 1700 50  0001 C CNN
+	1    10300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 6129322B
+P 10750 1700
+F 0 "H6" H 10850 1746 50  0000 L CNN
+F 1 "M2" H 10850 1655 50  0000 L CNN
+F 2 "PacificSound:MountingHole_2.2mm_M2_Pad" H 10750 1700 50  0001 C CNN
+F 3 "~" H 10750 1700 50  0001 C CNN
+	1    10750 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 61293FB9
+P 10300 2050
+F 0 "H7" H 10400 2096 50  0000 L CNN
+F 1 "M2" H 10400 2005 50  0000 L CNN
+F 2 "PacificSound:MountingHole_2.2mm_M2_Pad" H 10300 2050 50  0001 C CNN
+F 3 "~" H 10300 2050 50  0001 C CNN
+	1    10300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D20
+U 1 1 61292BD5
+P 6250 4050
+F 0 "D20" V 6296 3970 50  0000 R CNN
+F 1 "D" V 6205 3970 50  0000 R CNN
+F 2 "PacificSound:D_TH_SMD" H 6250 4050 50  0001 C CNN
+F 3 "~" H 6250 4050 50  0001 C CNN
+	1    6250 4050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5850 3200
+Wire Wire Line
+	7750 3900 7750 4000
+Wire Wire Line
+	9000 3200 9000 3250
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 6164ED9F
+P 10800 2050
+F 0 "H8" H 10900 2096 50  0000 L CNN
+F 1 "M2" H 10900 2005 50  0000 L CNN
+F 2 "PacificSound:MountingHole_2.2mm_M2_Pad" H 10800 2050 50  0001 C CNN
+F 3 "~" H 10800 2050 50  0001 C CNN
+	1    10800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4100 4550 4100
+Wire Wire Line
+	4550 4100 4550 3850
+Wire Wire Line
+	5150 3200 5150 3250
+Wire Wire Line
+	4550 3250 5150 3250
+Connection ~ 5150 3200
+$Comp
+L power:GND #PWR0101
+U 1 1 613D2A6C
+P 2600 1300
+F 0 "#PWR0101" H 2600 1050 50  0001 C CNN
+F 1 "GND" H 2605 1127 50  0000 C CNN
+F 2 "" H 2600 1300 50  0001 C CNN
+F 3 "" H 2600 1300 50  0001 C CNN
+	1    2600 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 613D681A
+P 2100 3000
+F 0 "#PWR0102" H 2100 2750 50  0001 C CNN
+F 1 "GND" H 2105 2827 50  0000 C CNN
+F 2 "" H 2100 3000 50  0001 C CNN
+F 3 "" H 2100 3000 50  0001 C CNN
+	1    2100 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 6140B39C
+P 2600 1400
+F 0 "#PWR0106" H 2600 1250 50  0001 C CNN
+F 1 "+3.3V" V 2615 1528 50  0000 L CNN
+F 2 "" H 2600 1400 50  0001 C CNN
+F 3 "" H 2600 1400 50  0001 C CNN
+	1    2600 1400
+	0    1    1    0   
+$EndComp
+Text GLabel 2600 1500 2    50   Input ~ 0
+B10
+Text GLabel 2600 1600 2    50   Input ~ 0
+B2
+Text GLabel 2600 1700 2    50   Input ~ 0
+B1
+Text GLabel 2600 1800 2    50   Input ~ 0
+B0
+Text GLabel 2600 1900 2    50   Input ~ 0
+A7
+Text GLabel 2600 2000 2    50   Input ~ 0
+A6
+Text GLabel 2600 2100 2    50   Input ~ 0
+A5
+Text GLabel 2600 2200 2    50   Input ~ 0
+A4
+Text GLabel 2600 2300 2    50   Input ~ 0
+A3
+Text GLabel 2600 2400 2    50   Input ~ 0
+A2
+Text GLabel 2600 2500 2    50   Input ~ 0
+A1
+Text GLabel 2600 2600 2    50   Input ~ 0
+A0
+Text GLabel 2100 2800 0    50   Input ~ 0
+B9
+Text GLabel 2100 2700 0    50   Input ~ 0
+B8
+Text GLabel 2100 2600 0    50   Input ~ 0
+B7
+Text GLabel 2100 2500 0    50   Input ~ 0
+B6
+Text GLabel 2100 2400 0    50   Input ~ 0
+B5
+Text GLabel 2100 2300 0    50   Input ~ 0
+B4
+Text GLabel 2100 2200 0    50   Input ~ 0
+B3
+Text GLabel 2100 1200 0    50   Input ~ 0
+B12
+Text GLabel 2100 1300 0    50   Input ~ 0
+B13
+Text GLabel 2100 1400 0    50   Input ~ 0
+B14
+Text GLabel 2100 1500 0    50   Input ~ 0
+B15
+Text GLabel 2100 1600 0    50   Input ~ 0
+A8
+Text GLabel 2100 1700 0    50   Input ~ 0
+A9
+Text GLabel 2100 1800 0    50   Input ~ 0
+A10
+NoConn ~ 2600 2800
+NoConn ~ 2600 2900
+NoConn ~ 2600 3000
+NoConn ~ 2600 3100
+NoConn ~ 2600 2700
+Text GLabel 3050 1500 0    50   Input ~ 0
+B10
+Text GLabel 3150 1500 2    50   Input ~ 0
+Col2
+Wire Wire Line
+	3050 1500 3150 1500
+Text GLabel 1650 1200 2    50   Input ~ 0
+B12
+Text GLabel 1550 1200 0    50   Input ~ 0
+Col6
+Wire Wire Line
+	1650 1200 1550 1200
+Text GLabel 1650 1300 2    50   Input ~ 0
+B13
+Text GLabel 1550 1300 0    50   Input ~ 0
+Col5
+Wire Wire Line
+	1650 1300 1550 1300
+Text GLabel 1650 1400 2    50   Input ~ 0
+B14
+Text GLabel 1550 1400 0    50   Input ~ 0
+Col4
+Wire Wire Line
+	1650 1400 1550 1400
+Text GLabel 1650 1500 2    50   Input ~ 0
+B15
+Text GLabel 1550 1500 0    50   Input ~ 0
+Col3
+Wire Wire Line
+	1650 1500 1550 1500
+Text GLabel 1700 1600 2    50   Input ~ 0
+A8
+Text GLabel 1600 1600 0    50   Input ~ 0
+Col1
+Wire Wire Line
+	1700 1600 1600 1600
+Text GLabel 1700 1700 2    50   Input ~ 0
+A9
+Text GLabel 1600 1700 0    50   Input ~ 0
+Row2
+Wire Wire Line
+	1700 1700 1600 1700
+Wire Wire Line
+	1700 2400 1600 2400
+Wire Wire Line
+	1700 2300 1600 2300
+Text GLabel 1700 2400 2    50   Input ~ 0
+B5
+Text GLabel 1700 2300 2    50   Input ~ 0
+B4
+Text GLabel 1600 2400 0    50   Input ~ 0
+EncoB1
+Text GLabel 1600 2300 0    50   Input ~ 0
+EncoA1
+Wire Wire Line
+	1700 2600 1600 2600
+Wire Wire Line
+	1700 2500 1600 2500
+Text GLabel 1700 2800 2    50   Input ~ 0
+B9
+Text GLabel 1700 2700 2    50   Input ~ 0
+B8
+Text GLabel 1600 2600 0    50   Input ~ 0
+EncoB2
+Text GLabel 1600 2500 0    50   Input ~ 0
+EncoA2
+Text GLabel 3000 1900 0    50   Input ~ 0
+A7
+Wire Wire Line
+	1650 1800 1550 1800
+Text GLabel 1550 1800 0    50   Input ~ 0
+Row4
+Text GLabel 1650 1800 2    50   Input ~ 0
+A10
+Text GLabel 3000 1800 0    50   Input ~ 0
+B0
+Wire Wire Line
+	3000 1700 3100 1700
+Text GLabel 3100 1700 2    50   Input ~ 0
+Row3
+Text GLabel 3000 1700 0    50   Input ~ 0
+B1
+Text GLabel 3000 1600 0    50   Input ~ 0
+B2
+Wire Wire Line
+	3000 2500 3100 2500
+Wire Wire Line
+	3000 2600 3100 2600
+Text GLabel 1700 2200 2    50   Input ~ 0
+B3
+Text GLabel 3000 2100 0    50   Input ~ 0
+A5
+Text GLabel 3100 2500 2    50   Input ~ 0
+EncoB3
+Text GLabel 3100 2600 2    50   Input ~ 0
+EncoA3
+Wire Wire Line
+	3000 1600 3100 1600
+Text GLabel 3000 2000 0    50   Input ~ 0
+A6
+Text GLabel 3100 1600 2    50   Input ~ 0
+Row1
+$Comp
+L power:+5V #PWR0108
+U 1 1 61379376
+P 2600 1200
+F 0 "#PWR0108" H 2600 1050 50  0001 C CNN
+F 1 "+5V" V 2615 1328 50  0000 L CNN
+F 2 "" H 2600 1200 50  0001 C CNN
+F 3 "" H 2600 1200 50  0001 C CNN
+	1    2600 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 61379FB7
+P 2100 2900
+F 0 "#PWR0109" H 2100 2750 50  0001 C CNN
+F 1 "+5V" V 2115 3028 50  0000 L CNN
+F 2 "" H 2100 2900 50  0001 C CNN
+F 3 "" H 2100 2900 50  0001 C CNN
+	1    2100 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 613EE9A8
+P 2100 3100
+F 0 "#PWR0105" H 2100 2950 50  0001 C CNN
+F 1 "+3.3V" V 2115 3228 50  0000 L CNN
+F 2 "" H 2100 3100 50  0001 C CNN
+F 3 "" H 2100 3100 50  0001 C CNN
+	1    2100 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x20_Counter_Clockwise U1
+U 1 1 613C0949
+P 2300 2100
+F 0 "U1" H 2350 3217 50  0000 C CNN
+F 1 "Conn_02x20_Counter_Clockwise" H 2350 3126 50  0000 C CNN
+F 2 "PacificSound:BlackPill" H 2300 2100 50  0001 C CNN
+F 3 "~" H 2300 2100 50  0001 C CNN
+	1    2300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:8P8C J1
+U 1 1 61AC5B77
+P 5000 5450
+F 0 "J1" H 4670 5546 50  0000 R CNN
+F 1 "8P8C" H 4670 5455 50  0000 R CNN
+F 2 "PacificSound:GMX-SMT2-S-88" V 5000 5475 50  0001 C CNN
+F 3 "~" V 5000 5475 50  0001 C CNN
+	1    5000 5450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1250 8650 1250
+Wire Wire Line
+	8650 1250 8650 1800
+Connection ~ 8650 1800
+Wire Wire Line
+	7850 1250 7950 1250
+Wire Wire Line
+	7950 1250 7950 1800
+Connection ~ 7950 1800
+Wire Wire Line
+	7150 1250 7250 1250
+Wire Wire Line
+	7250 1250 7250 1800
+Connection ~ 7250 1800
+Wire Wire Line
+	6450 1250 6550 1250
+Wire Wire Line
+	6550 1250 6550 1800
+Connection ~ 6550 1800
+Wire Wire Line
+	5750 1250 5850 1250
+Wire Wire Line
+	5850 1250 5850 1800
+Connection ~ 5850 1800
+Wire Wire Line
+	5050 1250 5150 1250
+Wire Wire Line
+	5150 1250 5150 1800
+Connection ~ 5150 1800
+Connection ~ 6250 4200
+Wire Wire Line
+	6250 4200 6950 4200
+Wire Wire Line
+	5200 4200 6250 4200
+Wire Wire Line
+	5850 3200 5850 3900
+Wire Wire Line
+	6950 4200 7600 4200
+Wire Wire Line
+	7600 3900 7750 3900
+Wire Wire Line
+	7250 3200 7250 3800
+Wire Wire Line
+	7250 3800 7750 3800
+Connection ~ 7250 3200
+Wire Wire Line
+	8650 3050 9000 3050
+Wire Wire Line
+	8850 3200 9000 3200
+$Comp
+L power:GND #PWR0103
+U 1 1 61BB504B
+P 4400 5800
+F 0 "#PWR0103" H 4400 5550 50  0001 C CNN
+F 1 "GND" H 4405 5627 50  0000 C CNN
+F 2 "" H 4400 5800 50  0001 C CNN
+F 3 "" H 4400 5800 50  0001 C CNN
+	1    4400 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5650 4600 5750
+Wire Wire Line
+	4400 5800 4400 5750
+Wire Wire Line
+	4400 5750 4600 5750
+Connection ~ 4600 5750
+$Comp
+L power:+5V #PWR0104
+U 1 1 61BC2ED0
+P 4400 5000
+F 0 "#PWR0104" H 4400 4850 50  0001 C CNN
+F 1 "+5V" V 4415 5128 50  0000 L CNN
+F 2 "" H 4400 5000 50  0001 C CNN
+F 3 "" H 4400 5000 50  0001 C CNN
+	1    4400 5000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 5000 4600 5000
+Wire Wire Line
+	4600 5000 4600 5050
+Wire Wire Line
+	4600 5050 4600 5150
+Connection ~ 4600 5050
+Text GLabel 1700 2500 2    50   Input ~ 0
+B6
+Text GLabel 1700 2600 2    50   Input ~ 0
+B7
+Text GLabel 3000 2600 0    50   Input ~ 0
+A0
+Text GLabel 3000 2500 0    50   Input ~ 0
+A1
+Text GLabel 2100 1900 0    50   Input ~ 0
+A11
+Text GLabel 2100 2000 0    50   Input ~ 0
+A12
+Text GLabel 2100 2100 0    50   Input ~ 0
+A15
+Text GLabel 1650 1900 2    50   Input ~ 0
+A11
+Text GLabel 1650 2000 2    50   Input ~ 0
+A12
+Text GLabel 1650 2100 2    50   Input ~ 0
+A15
+NoConn ~ 1650 1900
+NoConn ~ 1650 2000
+Text GLabel 3000 2200 0    50   Input ~ 0
+A4
+Text GLabel 3000 2400 0    50   Input ~ 0
+A2
+Text GLabel 3000 2300 0    50   Input ~ 0
+A3
+Text GLabel 3150 2100 2    50   Input ~ 0
+SPI_SCK
+Text GLabel 3150 2000 2    50   Input ~ 0
+SPI_MISO
+Text GLabel 3150 1900 2    50   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	3000 1900 3150 1900
+Wire Wire Line
+	3000 2000 3150 2000
+Wire Wire Line
+	3000 2100 3150 2100
+Text GLabel 3150 2200 2    50   Input ~ 0
+SPI_NSS
+Wire Wire Line
+	3000 2200 3150 2200
+Text GLabel 4450 5450 0    50   Input ~ 0
+SPI_SCK
+Text GLabel 4450 5350 0    50   Input ~ 0
+SPI_MISO
+Text GLabel 4450 5250 0    50   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	4600 5250 4450 5250
+Wire Wire Line
+	4600 5350 4450 5350
+Wire Wire Line
+	4600 5450 4450 5450
+Text GLabel 4450 5550 0    50   Input ~ 0
+SPI_NSS
+Wire Wire Line
+	4600 5550 4450 5550
+NoConn ~ 1700 2700
+NoConn ~ 1700 2800
+NoConn ~ 1700 2200
+NoConn ~ 1650 2100
+NoConn ~ 3000 1800
+NoConn ~ 3000 2300
+NoConn ~ 3000 2400
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 61CD0878
+P 1600 6500
+F 0 "H9" H 1700 6546 50  0000 L CNN
+F 1 "M2" H 1700 6455 50  0000 L CNN
+F 2 "PacificSound:RightSideArt" H 1600 6500 50  0001 C CNN
+F 3 "~" H 1600 6500 50  0001 C CNN
+	1    1600 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 61CD087E
+P 2100 6500
+F 0 "H10" H 2200 6546 50  0000 L CNN
+F 1 "M2" H 2200 6455 50  0000 L CNN
+F 2 "PacificSound:LeftSideArt" H 2100 6500 50  0001 C CNN
+F 3 "~" H 2100 6500 50  0001 C CNN
+	1    2100 6500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
