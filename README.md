@@ -1,7 +1,14 @@
 # PacificSound_SplitKeyboard
+
 ## Custom Column Stagger Split Keyboard
 
 This keyboard is an initial attempt at making a custom ergonomic column stagger split keyboard. It was the result of wanting to design a column stagger keyboard that operated using the STM32F4XX development boards (BlackPill). The generation of the PCB contained here was a result of a PCB promotion that offered free prototypes so long as they fit within 150mm X 100mm so I rearranged things to fit in. Rotary encoder positions were included (because why not...) and are hooked up to the timer channels so that they can be put in encoder mode and rely on the STM hardware and software to keep track of the encoders. All three encoders have separate lines. The PCBs are reversable and the plan was to make the switch footprints as compatible with switch variants as possible (for soldering, not hot swap). Although I only have MX type switches so that's all I've tested with so far. I also wanted to be sure I could make use of the SPI capability on these boards to (theoretically) be able to maximize data transfer between the halves and limit inefficiency and latency. The plan is also to explore the use of DMA for fast transfers and FreeRTOS for scheduling. In prototypint I explored QMK compatible setups but I did not like the idea of using these boards with a less efficient serial communication when they are capable of more. So then I explored creating code using the STM software and compilation and I figured I could play around with the creation of some basic firmware. So there is no proper firmware for this keyboard. Due to the use of SPI the boards are _not compatible with QMK_ (to the best of my knowledge).
+
+![PCB Photo](https://github.com/RobK-0/PacificSound_SplitKeyboard/blob/main/images/PCB_Picture.jpg)
+
+![Right Half Completed Photo](https://github.com/RobK-0/PacificSound_SplitKeyboard/blob/main/images/RightHalfPicture.jpg)
+
+![Left Half Completed Photo](https://github.com/RobK-0/PacificSound_SplitKeyboard/blob/main/images/LeftHalfPicture.jpg)
 
 ## Mistakes Were Made
 
