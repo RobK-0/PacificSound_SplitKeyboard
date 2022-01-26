@@ -60,23 +60,24 @@ extern USBD_HandleTypeDef hUsbDeviceFS;
 
 uint8_t kbUSB_data[8]={0x00};
 
+
+// uint8_t kbUSB_data[8]={0x00};
 uint8_t n_kbSPI = 8;
 uint8_t kbSPI_tx[8]={0x0};
 uint8_t kbSPI_rx[8]={0x0};
 uint16_t debounce = 50;
 
 
-/* initialize a vector for the keyboard counting (counting cycles a key)
-   is kept pressed */
+/* initialize a vector for the keyboard */
 uint8_t vect_ind = 0x0;
 uint16_t kb_count_vect[22]={0x0};
 
 
 
-// Keymaps for both the left and right sides of the keyboard
+// Keymaps for the left and right sides of the keyboard
 // These are stored as a vector to reference from the kbSPI sets
-// No keymap is stored in the right hand side (only left hand side
-// can be plugged in with this code)
+
+/*
 uint8_t kc_left_l0[22]={0x05 ,0x13 ,0x09 ,0x1a ,0x14 ,0x2b ,0x0a ,
 		0x17 ,0x16 ,0x15 ,0x04 ,0x29 ,0x19 ,0x07 ,0x06 ,0x1b ,0x1d ,
 		0x02 ,0x00 ,0x2a ,0x52 ,0x51};
@@ -84,6 +85,55 @@ uint8_t kc_left_l0[22]={0x05 ,0x13 ,0x09 ,0x1a ,0x14 ,0x2b ,0x0a ,
 uint8_t kc_right_l0[22]={0x0d ,0x0f ,0x18 ,0x1c ,0x33 ,0x28 ,0x10 ,
 		0x11 ,0x08 ,0x0c ,0x12 ,0x34 ,0x0e ,0x0b ,0x36 ,0x37 ,0x38 ,
 		0x20 ,0x00 ,0x2c ,0x50 ,0x4f};
+*/
+
+uint8_t layer_state = 0;
+
+//Layer 0:
+//Code length: 22
+uint8_t kc_left_l0[22]={0x05 ,0x13 ,0x09 ,0x1a ,0x14 ,0x2b ,0x0a ,0x17 ,0x16 ,0x15 ,0x04 ,0x29 ,0x19 ,0x07 ,0x06 ,0x1b ,0x1d ,0x00 ,0x00 ,0x2a ,0x00 ,0x00};
+//Code length: 22
+uint8_t kc_right_l0[22]={0x0d ,0x0f ,0x18 ,0x1c ,0x33 ,0x28 ,0x10 ,0x11 ,0x08 ,0x0c ,0x12 ,0x34 ,0x0e ,0x0b ,0x36 ,0x37 ,0x38 ,0x00 ,0x00 ,0x2c ,0x00 ,0x00};
+//Code length: 22
+uint8_t mod_left_l0[22]={0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x02 ,0x00 ,0x00 ,0x00 ,0x00};
+//Code length: 22
+uint8_t mod_right_l0[22]={0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x20 ,0x00 ,0x00 ,0x00 ,0x00};
+//Layer 1:
+//Code length: 22
+uint8_t kc_left_l1[22]={0x00 ,0x3d ,0x3c ,0x3b ,0x3a ,0x00 ,0x00 ,0x41 ,0x40 ,0x3f ,0x3e ,0x00 ,0x00 ,0x45 ,0x44 ,0x43 ,0x42 ,0x00 ,0x00 ,0x2a ,0x00 ,0x00};
+//Code length: 22
+uint8_t kc_right_l1[22]={0x00 ,0x2d ,0x2e ,0x26 ,0x27 ,0x31 ,0x00 ,0x2d ,0x2e ,0x2f ,0x30 ,0x31 ,0x00 ,0x00 ,0x00 ,0x2f ,0x30 ,0x00 ,0x00 ,0x2c ,0x00 ,0x00};
+//Code length: 22
+uint8_t mod_left_l1[22]={0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x02 ,0x00 ,0x00 ,0x00 ,0x00};
+//Code length: 22
+uint8_t mod_right_l1[22]={0x00 ,0x02 ,0x02 ,0x02 ,0x02 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x02 ,0x00 ,0x00 ,0x00 ,0x02 ,0x02 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00};
+//Layer 2:
+//Code length: 22
+uint8_t kc_left_l2[22]={0x00 ,0x4b ,0x52 ,0x4a ,0x00 ,0x00 ,0x46 ,0x4f ,0x51 ,0x50 ,0x00 ,0x00 ,0x49 ,0x4e ,0x51 ,0x4d ,0x00 ,0x00 ,0x00 ,0x2a ,0x00 ,0x00};
+//Code length: 22
+uint8_t kc_right_l2[22]={0x00 ,0x4a ,0x52 ,0x4b ,0x00 ,0x00 ,0x00 ,0x50 ,0x51 ,0x4f ,0x00 ,0x00 ,0x00 ,0x4d ,0x51 ,0x4e ,0x00 ,0x00 ,0x00 ,0x2c ,0x00 ,0x00};
+//Code length: 22
+uint8_t mod_left_l2[22]={0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x02 ,0x00 ,0x00 ,0x00 ,0x00};
+//Code length: 22
+uint8_t mod_right_l2[22]={0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x20 ,0x00 ,0x00 ,0x00 ,0x00};
+//Layer 3:
+//Code length: 22
+uint8_t kc_left_l3[22]={0x00 ,0x4b ,0x52 ,0x4a ,0x00 ,0x2b ,0x00 ,0x4f ,0x51 ,0x50 ,0x00 ,0x29 ,0x00 ,0x4e ,0x51 ,0x4d ,0x00 ,0x00 ,0x00 ,0x2a ,0x00 ,0x00};
+//Code length: 22
+uint8_t kc_right_l3[22]={0x00 ,0x5f ,0x60 ,0x61 ,0x55 ,0x28 ,0x2e ,0x5c ,0x5d ,0x5e ,0x56 ,0x34 ,0x00 ,0x59 ,0x5a ,0x5b ,0x57 ,0x00 ,0x00 ,0x2c ,0x00 ,0x00};
+//Code length: 22
+uint8_t mod_left_l3[22]={0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x02 ,0x00 ,0x00 ,0x00 ,0x00};
+//Code length: 22
+uint8_t mod_right_l3[22]={0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x20 ,0x00 ,0x00 ,0x00 ,0x00};
+//Layer 4:
+//Code length: 22
+uint8_t kc_left_l4[22]={0x22 ,0x21 ,0x20 ,0x1f ,0x1e ,0x35 ,0x22 ,0x21 ,0x20 ,0x1f ,0x1e ,0x35 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x2a ,0x00 ,0x00};
+//Code length: 22
+uint8_t kc_right_l4[22]={0x23 ,0x24 ,0x25 ,0x26 ,0x27 ,0x2d ,0x23 ,0x24 ,0x25 ,0x26 ,0x27 ,0x2d ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x2c ,0x00 ,0x00};
+//Code length: 22
+uint8_t mod_left_l4[22]={0x02 ,0x02 ,0x02 ,0x02 ,0x02 ,0x02 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00};
+//Code length: 22
+uint8_t mod_right_l4[22]={0x02 ,0x02 ,0x02 ,0x02 ,0x02 ,0x02 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00};
 
 
 
@@ -93,6 +143,9 @@ void send_keycodes(void){
 	uint8_t code=0;
 	uint8_t ii;
 
+	uint8_t kc;
+	uint8_t mod;
+
 	// Start by zeroing out the keycode data that will be sent
 	for ( code=0; code<8; ++code){
 		kbUSB_data[code] = 0x0;
@@ -100,27 +153,66 @@ void send_keycodes(void){
 	code=0;
 
 	// First check for layer keys
-	// this section is to be added after a working test
-	// is going.
+	//
+	// Layer 0: default
+	// Layer 1: kbSPI_tx has key 21
+	// Layer 2: kbSPI_rx has key 21
+	// Layer 3: kbSPI_tx has key 22
+
+	layer_state=0;
+
+	for(ii=0; ii<n_kbSPI; ++ii){
+		if(kbSPI_rx[ii]==22){
+			layer_state=4;
+		}
+		else if(kbSPI_tx[ii]==22){
+			layer_state=3;
+		}
+		else if(kbSPI_rx[ii]==21){
+			layer_state=2;
+		}
+		else if(kbSPI_tx[ii]==21){
+			layer_state=1;
+		}
+	}
 
 
 
 	// Now interpret kbSPI_tx (this board)
 	for(ii=0; ii<n_kbSPI; ++ii){
 		if(kbSPI_tx[ii]>0){
+			// If the number of keycodes is less than 6 add the keycode to the data
+			if(layer_state==0){
+				kc = kc_left_l0[kbSPI_tx[ii]-1];
+				mod = mod_left_l0[kbSPI_tx[ii]-1];
+			}
+			else if(layer_state==1){
+				kc = kc_left_l1[kbSPI_tx[ii]-1];
+				mod = mod_left_l1[kbSPI_tx[ii]-1];
 
-			// If the key is a modifier then "OR" the code with the first character
-			// in the usb data set
-			// Otherwise if the number of keycodes is less than 6 add the keycode to the data
-			if((kbSPI_tx[ii]-1)==17){
-				kbUSB_data[0] = kbUSB_data[0]|kc_left_l0[kbSPI_tx[ii]-1];
+			}
+			else if(layer_state==2){
+				kc = kc_left_l2[kbSPI_tx[ii]-1];
+				mod = mod_left_l2[kbSPI_tx[ii]-1];
+			}
+			else if(layer_state==3){
+				kc = kc_left_l3[kbSPI_tx[ii]-1];
+				mod = mod_left_l3[kbSPI_tx[ii]-1];
 			}
 			else{
+				kc = kc_left_l4[kbSPI_tx[ii]-1];
+				mod = mod_left_l4[kbSPI_tx[ii]-1];
+			}
+
+			if(kc>0){
 				if(code<6){
-					kbUSB_data[code+2]=kc_left_l0[kbSPI_tx[ii]-1];
+					kbUSB_data[code+2]=kc;
 					++code;
 				}
 			}
+
+			kbUSB_data[0] = kbUSB_data[0]|mod;
+
 		}
 	}
 
@@ -130,19 +222,38 @@ void send_keycodes(void){
 	// Now add in kbSPI_rx (the other board)
 	for(ii=0; ii<n_kbSPI; ++ii){
 		if(kbSPI_rx[ii]>0){
+			// If the number of keycodes is less than 6 add the keycode to the data
+			if(layer_state==0){
+				kc = kc_right_l0[kbSPI_rx[ii]-1];
+				mod = mod_right_l0[kbSPI_rx[ii]-1];
+			}
+			else if(layer_state==1){
+				kc = kc_right_l1[kbSPI_rx[ii]-1];
+				mod = mod_right_l1[kbSPI_rx[ii]-1];
 
-			// If the key is a modifier then "OR" the code with the first character
-			// in the usb data set
-			// Otherwise if the number of keycodes is less than 6 add the keycode to the data
-			if((kbSPI_rx[ii]-1)==17){
-				kbUSB_data[0] = kbUSB_data[0]|kc_right_l0[kbSPI_rx[ii]-1];
+			}
+			else if(layer_state==2){
+				kc = kc_right_l2[kbSPI_rx[ii]-1];
+				mod = mod_right_l2[kbSPI_rx[ii]-1];
+			}
+			else if(layer_state==3){
+				kc = kc_right_l3[kbSPI_rx[ii]-1];
+				mod = mod_right_l3[kbSPI_rx[ii]-1];
 			}
 			else{
+				kc = kc_right_l4[kbSPI_rx[ii]-1];
+				mod = mod_right_l4[kbSPI_rx[ii]-1];
+			}
+
+			if(kc>0){
 				if(code<6){
-					kbUSB_data[code+2]=kc_right_l0[kbSPI_rx[ii]-1];
+					kbUSB_data[code+2]=kc;
 					++code;
 				}
 			}
+
+			kbUSB_data[0] = kbUSB_data[0]|mod;
+
 		}
 	}
 
@@ -276,6 +387,38 @@ void update_keys(void){
 }
 
 
+
+//void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
+
+/*
+void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi)
+{
+	// After SPI transmission of the data is complete
+	// then the matrix of the keyboard is scanned.
+	// The data from the other half is read from
+	// HAL_SPI_Receive_DMA
+	// At which point there is updated data from both
+	// halves and the keycode set can be created from the
+	// kbSPI_rx and kbSPI_tx vectors
+	// (kbSPI_tx is this board, kbSPI_rx is the other board)
+	//HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,0);
+
+	scan_matrix();
+	update_keys();
+
+    HAL_SPI_Receive_DMA(&hspi1, kbSPI_rx, 8);
+
+	// This is where the keyboard indice sets are interpreted
+	//send_keycodes();
+
+	//HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,1);
+
+	//HAL_SPI_Transmit_DMA(&hspi1, kbSPI_tx, 8);
+}
+*/
+
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -333,6 +476,8 @@ int main(void)
   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,1);
   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_2,1);
 
+  //HAL_SPI_Receive_DMA(&hspi1, kbSPI_rx, 8);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -341,17 +486,8 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
 
-    // On each loop scan the matrix of this half.
-    // Then update the vector of keys that have
-    // been pressed down (stored in kbSPI_tx) even
-    // though it is not actually transmitted.
-    // Then recieve the vector of keys that are
-    // held down on the other half from SPI_Recieve.
-    // Original intent was to use DMA to do SPI transmission
-    // that's not working yet. This is a simple way to
-    // get something functioning.
+	//HAL_SPI_Receive_DMA(&hspi1, kbSPI_rx, 8);
 	scan_matrix();
 	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,0);
 	update_keys();
@@ -360,6 +496,7 @@ int main(void)
 
 	send_keycodes();
 
+    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
